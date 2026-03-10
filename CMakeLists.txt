@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.13)
 
-# Include the SDK (either from src directory or root)
+set(PICO_BOARD pico_w)
+
+# Include the SDK
 include(src/pico_sdk_import.cmake)
 
 # Project name
@@ -17,7 +19,6 @@ pico_sdk_init()
 include_directories(include)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 
 # Add the source directory
 add_subdirectory(src)

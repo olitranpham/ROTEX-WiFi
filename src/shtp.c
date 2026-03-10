@@ -23,6 +23,7 @@
 #include "sh2_err.h"
 
 #include <string.h>
+#include <stdio.h>
 
 // ------------------------------------------------------------------------
 // Private types
