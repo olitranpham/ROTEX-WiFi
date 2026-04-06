@@ -1,6 +1,6 @@
 import time
 import math
-import pandas       #note you will need to install pandas. Use command "pip install pandas" in terminal
+import pandas           #note you will need to install pandas. Use command "pip install pandas" in terminal
 
 #User inputted variables
 max_torque = 0.2        #actual value 46.1
@@ -52,8 +52,9 @@ try:
 
         time.sleep(1)
 
-except KeyboardInterrupt:
+except KeyboardInterrupt:       #ctrl + c
     print("Error. Testing concluded.")
+    print(" ")
 
 finally:
     print(f"Total times exceeding threshold: {max_torque_flag}")
